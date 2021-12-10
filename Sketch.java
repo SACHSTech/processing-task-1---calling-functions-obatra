@@ -24,7 +24,7 @@ public class Sketch extends PApplet {
   }
 
   /**
-   * Called repeatedly, anything drawn to the screen goes here
+   * Called repeatedly, anything drawn to the screen goes   #
    */
   public void draw() {
 	 // sun drawing 
