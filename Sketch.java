@@ -30,21 +30,21 @@ public class Sketch extends PApplet {
 	 // sun drawing 
 	 stroke(150);
 	 fill(253,184,19);
-	 ellipse(0,0,180,180);
+	 ellipse(0/width,0/height,180,180);
 	 // house
 	 fill(155,99,76);
-	 rect(175,150,200,200);
+	 rect((float)(width/3.4),height/4,200,200);
 	 // roof
 	 noStroke();
 	 fill(242,223,180);
-	 triangle(175,150,375,150,275,75);
+	 triangle((float)(width/3.4),height/4,(float)(width/1.6),height/4,(float)(width/2.18),height/8);
 	 // door
 	 noStroke();
 	 fill(0,0,0);
-	 rect(210,220,130,130);
+	 rect((float)(width/2.9),(float)(height/2.72),130,130);
 	 //windows
-	 rect(230,180,30,30);
-	 rect(280,180,30,30);
+	 rect((float)(width/2.6),(float)(height/3.3),30,30);
+	 rect((float)(width/2.14),(float)(height/3.3),30,30);
 	 
   }
 }
