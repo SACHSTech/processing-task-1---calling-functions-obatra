@@ -8,7 +8,7 @@ public class Sketch extends PApplet {
    */
   public void settings() {
 	// put your size call here
-    size(400, 400);
+    size(600, 600);
   }
 
   /** 
@@ -16,21 +16,35 @@ public class Sketch extends PApplet {
    * values here i.e background, stroke, fill etc.
    */
   public void setup() {
-    background(210, 255, 173);
+	// grass/sky   
+    background(0,255,128);
+    noStroke();
+    fill(135,206,235);
+    rect(0,0,600,300);
   }
 
   /**
-   * Called repeatedly, anything drawn to the screen goes here
+   * Called repeatedly, anything drawn to the screen goes   #
    */
   public void draw() {
-	  
-	// sample code, delete this stuff
-    stroke(128);
-    line(150, 25, 270, 350);  
-
-    stroke(255);
-    line(50, 125, 70, 50);  
+	 // sun drawing 
+	 stroke(150);
+	 fill(253,184,19);
+	 ellipse(0,0,180,180);
+	 // house
+	 fill(155,99,76);
+	 rect(175,150,200,200);
+	 // roof
+	 noStroke();
+	 fill(242,223,180);
+	 triangle(175,150,375,150,275,75);
+	 // door
+	 noStroke();
+	 fill(0,0,0);
+	 rect(208,221,130,130);
+	 //windows
+	 rect(218,181,30,30);
+	 rect(288,181,30,30);
+	 
   }
-  
-  // define other methods down here.
 }
